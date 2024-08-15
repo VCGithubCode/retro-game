@@ -1,7 +1,7 @@
 .scene {
     width: 100vw;
     height: 100vh;
-    background-color: #a1adff;
+    background-color: #049cd8;
   }
   
   h1 {
@@ -10,7 +10,7 @@
     width: 100%;
     font-size: 30px;
     position: fixed;
-    top: 50px;
+    top: 300px;
   }
   
   .mario {
@@ -21,7 +21,7 @@
     position: fixed;
     bottom: 100px;
     transition: all 1s ease;
-    animation: animateMario 2s linear forwards;
+    animation: animateMario 3s linear forwards infinite;
   }
   
   @keyframes animateMario {
@@ -60,8 +60,8 @@
     bottom: 250px;
     left: 70vw;
     z-index: 1;
-    animation: animateBox 1s ease forwards;
-    animation-delay: 1.4s;
+    animation: animateBox 3s ease forwards infinite;
+    animation-delay: 2.1s;
   }
   
   @keyframes animateBox {
@@ -84,8 +84,8 @@
     width: 50px;
     bottom: 250px;
     left: 70vw;
-    animation: animateCoin 1s ease forwards;
-    animation-delay: 1.4s;
+    animation: animateCoin 3s ease forwards infinite;
+    animation-delay: 2.4s;
   }
   
   @keyframes animateCoin {
