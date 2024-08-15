@@ -12,7 +12,34 @@
     position: fixed;
     top: 300px;
   }
+
+  title {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    bottom: 52%;
+    left: 26%;
+}
   
+  .nav {
+    position: fixed; 
+    top: 100px;
+    right: 50px; 
+    z-index: 1000; 
+    border-radius: 5px; 
+    padding: 10px;
+}
+
+.nav-link {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+}
+
   .mario {
     background-image: url("http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904");
     background-size: 50px;
