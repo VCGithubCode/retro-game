@@ -12,6 +12,15 @@
     position: fixed;
     top: 300px;
   }
+
+  title {
+    display: flex;
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    bottom: 52%;
+    left: 26%;
+}
   
   .nav {
     position: fixed; 
