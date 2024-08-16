@@ -30,22 +30,47 @@
 }
   
   .nav {
-    position: fixed; 
-    top: 100px;
+    position: absolute; 
+    top: 50px;
     right: 50px; 
     z-index: 1000; 
     border-radius: 5px; 
     padding: 10px;
+    display:flex;
+    list-style-type: none;
+    gap:20px;
+
+    
+}
+
+.nav-image {
+height: 90x;
+width: 200px;
 }
 
 .nav-link {
     font-weight: bold;
     padding: 10px;
+    font-style:inherit;
 }
 
 .nav-link:hover {
     text-decoration: none;
 }
+
+#start {
+  position: absolute; 
+  top: 65%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#start img {
+  height: 100px;
+  width: 300px;
+}
+
 
   .mario {
     background-image: url("http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904");
@@ -174,48 +199,55 @@
   }
   /*Footer*/
 
-  #lab_social_icon_footer {
-    padding: 40px 0;
-    background-color: #dedede;
-    text-align: center;
-  }
-  
-  #lab_social_icon_footer a {
-    color: #333;
-  }
-  
-  #lab_social_icon_footer .social:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-  }
-  
-  #lab_social_icon_footer .social {
-    -webkit-transform: scale(0.8);
-    /* Browser Variations: */
+  .flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+    display:flex;
+    gap:100px;
     
-    -moz-transform: scale(0.8);
-    -o-transform: scale(0.8);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-  }
-  /*
-      Multicoloured Hover Variations
-  */
-  
-  #lab_social_icon_footer #social-fb:hover {
-    color: #3B5998;
   }
   
-  #lab_social_icon_footer #social-tw:hover {
-    color: #4099FF;
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
   
-  #lab_social_icon_footer #social-gp:hover {
-    color: #d34836;
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
   }
   
-  #lab_social_icon_footer #social-em:hover {
-    color: #f39c12;
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    
+    
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .fa-brands, .fab {
+    font-weight: 400;
+    position: absolute;
+    left: 25%;
+    bottom: 272px;
+    display: flex;
+}
