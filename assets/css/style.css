@@ -272,3 +272,61 @@ width: 200px;
     bottom: 272px;
     display: flex;
 }
+
+/*media query for min-width 1270px and max width 2000px*/
+/*@media screen and (min-width:1270px) and (max-width: 2000px){
+}
+*/
+
+/*media query for min width 1025px and max width 1269px*/
+
+/*media query for min width 850px and max width 1024px*/
+@media screen and (min-width:850px) and (max-width:1024px){
+  #title {
+    height: 20%;
+  }
+  
+  .flip-card {
+    height: 80%;
+    width: 80%;
+  }
+}
+
+/*media query for min with 770px and max width 849px*/
+@media screen and (min-width:770px) and (max-width:849px){
+  #title {
+    margin: 10px;
+    height: 40%;
+    width: 40%;
+  }
+  
+  .flip-card {
+    height: 60%;
+    width: 60%;
+  }
+}
+
+/*media query for min width 705px and max width 769px*/
+@media screen and (min-width:705px) and (max-width:769px){
+
+}
+
+/*media query for min width 482px and max width 704px*/
+@media screen and (min-width:482px) and (max-width:704px){
+
+}
+
+/*media query for min width 381px max width 481px*/
+@media screen and (min-width:381px) and (max-width:481px){
+
+}
+
+/*media query for min width 381px max width 481px*/
+@media screen and (min-width:381px) and (max-width:481px){
+
+}
+
+/*media query for max width 320px*/
+@media screen and (max-width:320px){
+
+}
