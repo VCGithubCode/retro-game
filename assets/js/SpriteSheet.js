@@ -1,33 +1,58 @@
 export default class SpriteSheet {
-    constructor(image, w = 16, h = 16) {
+    constructor(image, width, height) {
         this.image = image;
-        this.width = w;
-        this.height = h;
+        this.width = width;
+        this.height = height;
         this.tiles = new Map();
+        this.animations = new Map();
     }
 
-    define(name, x, y) {
-        const buffer = document.createElement('canvas');
-        buffer.height = this.height;
-        buffer.width = this.width;
-        buffer
-            .getContext('2d')
-            .drawImage(
+    defineAnim(name, animation) {
+        this.animations.set(name, animation);
+    }
+
+    define(name, x, y, width, height) {
+        const buffers = [false, true].map(flip => {
+            const buffer = document.createElement('canvas');
+            buffer.width = width;
+            buffer.height = height;
+
+            const context = buffer.getContext('2d');
+
+            if (flip) {
+                context.scale(-1, 1);
+                context.translate(-width, 0);
+            }
+
+            context.drawImage(
                 this.image,
-                this.width * x,
-                this.height * y,
-                this.width,
-                this.height,
+                x,
+                y,
+                width,
+                height,
                 0,
                 0,
-                this.width,
-                this.height);
-        this.tiles.set(name, buffer);
+                width,
+                height);
+
+            return buffer;
+        });
+
+        this.tiles.set(name, buffers);
     }
 
-    draw(name, context, x, y) {
-        const buffer = this.tiles.get(name);
+    defineTile(name, x, y) {
+        this.define(name, x * this.width, y * this.height, this.width, this.height);
+    }
+
+    draw(name, context, x, y, flip = false) {
+        const buffer = this.tiles.get(name)[flip ? 1 : 0];
         context.drawImage(buffer, x, y);
+    }
+
+    drawAnim(name, context, x, y, distance) {
+        const animation = this.animations.get(name);
+        this.drawTile(animation(distance), context, x, y);
     }
 
     drawTile(name, context, x, y) {
