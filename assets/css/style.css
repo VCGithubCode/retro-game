@@ -52,6 +52,20 @@
     text-decoration: none;
 }
 
+#start {
+  position: absolute; 
+  top: 65%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#start img {
+  height: 100px;
+  width: 300px;
+}
+
+
   .mario {
     background-image: url("http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904");
     background-size: 50px;
