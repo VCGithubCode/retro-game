@@ -24,16 +24,23 @@
   
   .nav {
     position: fixed; 
-    top: 100px;
+    top: 50px;
     right: 50px; 
     z-index: 1000; 
     border-radius: 5px; 
     padding: 10px;
+    display:flex;
+    list-style-type: none;
+
+    
 }
 
 .nav-link {
     font-weight: bold;
     padding: 10px;
+    color:#e52521;
+    font-style:inherit;
+    
 }
 
 .nav-link:hover {
