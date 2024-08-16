@@ -31,6 +31,7 @@
     padding: 10px;
     display:flex;
     list-style-type: none;
+    gap:20px;
 
     
 }
@@ -40,6 +41,10 @@
     padding: 10px;
     color:#e52521;
     font-style:inherit;
+    text-decoration: none;
+    font-size: larger;
+    border: 2px solid black;
+    border-radius: 20px;
     
 }
 
