@@ -1,3 +1,10 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .scene {
     width: 100vw;
     height: 100vh;
@@ -20,7 +27,7 @@
     top: 300px;
   }
 
-  title {
+  #title {
     display: flex;
     position: absolute;
     width: 50%;
@@ -78,7 +85,7 @@ width: 200px;
     width: 50px;
     height: 66px;
     position: fixed;
-    bottom: 100px;
+    bottom: 150px;
     transition: all 1s ease;
     animation: animateMario 3s linear forwards infinite;
   }
@@ -116,7 +123,7 @@ width: 200px;
     position: fixed;
     height: 50px;
     width: 50px;
-    bottom: 250px;
+    bottom: 300px;
     left: 70vw;
     z-index: 1;
     animation: animateBox 3s ease forwards infinite;
@@ -125,10 +132,10 @@ width: 200px;
   
   @keyframes animateBox {
     0% {
-      bottom: 250px;
+      bottom: 300px;
     }
     50% {
-      bottom: 260px;
+      bottom: 310px;
     }
     100% {
       transform: scale(0);
@@ -141,7 +148,7 @@ width: 200px;
     position: fixed;
     height: 50px;
     width: 50px;
-    bottom: 250px;
+    bottom: 300px;
     left: 70vw;
     animation: animateCoin 3s ease forwards infinite;
     animation-delay: 2.4s;
@@ -149,7 +156,7 @@ width: 200px;
   
   @keyframes animateCoin {
     0% {
-      bottom: 250px;
+      bottom: 300px;
     }
     50% {
       bottom: 350px;
@@ -199,14 +206,28 @@ width: 200px;
   }
   /*Footer*/
 
+
+  footer {
+    background-color: #049cd8;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    padding-bottom: 90px;
+}
+
   .flip-card {
-    background-color: transparent;
-    width: 100px;
-    height: 100px;
-    perspective: 1000px;
-    display:flex;
-    gap:100px;
-    
+    background-color: #049cd8; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; 
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 10px;
+    z-index: 11; 
   }
   
   .flip-card-inner {
