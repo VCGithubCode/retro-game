@@ -206,6 +206,7 @@ width: 200px;
     perspective: 1000px;
     display:flex;
     gap:100px;
+    padding-left: 550px;
     
   }
   
@@ -250,4 +251,5 @@ width: 200px;
     left: 25%;
     bottom: 272px;
     display: flex;
+    color:#049cd8;
 }
