@@ -36,16 +36,15 @@
     
 }
 
+.nav-image {
+height: 90x;
+width: 200px;
+}
+
 .nav-link {
     font-weight: bold;
     padding: 10px;
-    color:#e52521;
     font-style:inherit;
-    text-decoration: none;
-    font-size: larger;
-    border: 2px solid black;
-    border-radius: 20px;
-    
 }
 
 .nav-link:hover {
