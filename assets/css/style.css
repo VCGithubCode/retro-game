@@ -61,14 +61,27 @@ width: 200px;
 #start {
   position: absolute; 
   top: 65%; 
-  left: 50%; 
+  left: 60%; 
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
 
+#start2 {
+  position: absolute; 
+  top: 65%; 
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#start2 img {
+  height: 75px;
+  width: 200px;
+}
+
 #start img {
-  height: 100px;
-  width: 300px;
+  height: 75px;
+  width: 200px;
 }
 
 
