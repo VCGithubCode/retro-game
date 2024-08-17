@@ -124,68 +124,56 @@
     top: 300px;
   }
 
-  title {
+
+#screen {
+  display: block;
+  image-rendering: pixelated;
+  height: 100vh;
+  margin: auto;
+}
+
+#game-choices {
     display: flex;
-    position: absolute;
-    width: 50%;
-    margin: 0 auto;
-    bottom: 52%;
-    left: 26%;
-}
-  
-  .nav {
+  flex-direction: column;
     position: absolute; 
-    top: 50px;
-    right: 50px; 
-    z-index: 1000; 
-    border-radius: 5px; 
-    padding: 10px;
-    display:flex;
-    list-style-type: none;
-    gap:20px;
-
-    
-}
-
-.nav-image {
-height: 90x;
-width: 200px;
-}
-
-.nav-link {
-    font-weight: bold;
-    padding: 10px;
-    font-style:inherit;
-}
-
-.nav-link:hover {
-    text-decoration: none;
+  top: 50%;
+  margin-inline: auto;
 }
 
 #start {
   position: absolute; 
-  top: 65%; 
-  left: 60%; 
-  transform: translate(-50%, -50%);
-  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: grid;
+  margin-inline: auto;
+  top: 45%;
+  background: black;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid white;
 }
 
 #start2 {
   position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: grid;
+    margin-inline: auto;
   top: 65%; 
-  left: 40%; 
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-}
-
-#start2 img {
-  height: 75px;
-  width: 200px;
+    background: black;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid white;
 }
 
 #start img {
-  height: 75px;
-  width: 200px;
+  width: 90%;
+}
+
+#start2 img {
+  width: 90%;
 }
 
 
@@ -194,7 +182,7 @@ width: 200px;
     background-size: 50px;
     width: 50px;
     height: 66px;
-    position: fixed;
+    position: absolute;
     bottom: 100px;
     transition: all 1s ease;
     animation: animateMario 3s linear forwards infinite;
@@ -224,13 +212,13 @@ width: 200px;
     width: 100px;
     height: 80px;
     margin: 20px;
-    position: fixed;
+    position: absolute;
   }
   
   .box {
     background-image: url("https://media.giphy.com/media/GPtziRMoxcwuc/giphy.gif");
     background-size: cover;
-    position: fixed;
+    position: absolute;
     height: 50px;
     width: 50px;
     bottom: 250px;
@@ -255,7 +243,7 @@ width: 200px;
   .coin {
     background-image: url("http://piq.codeus.net/static/media/userpics/piq_132831_400x400.png");
     background-size: cover;
-    position: fixed;
+    position: absolute;
     height: 50px;
     width: 50px;
     bottom: 250px;
@@ -280,7 +268,7 @@ width: 200px;
   .floor {
     background-image: url("https://t3.rbxcdn.com/1977bb7bbfc6b959cf6556daf6381793");
     background-size: 50px;
-    position: fixed;
+    position: absolute;
     width: 100vw;
     height: 100px;
     bottom: 0;
@@ -314,7 +302,7 @@ width: 200px;
     animation: animateCloud 18s linear infinite;
     transform: scale(1.5);
   }
-  /*Footer*/
+
 
   .flip-card {
     background-color: transparent;
