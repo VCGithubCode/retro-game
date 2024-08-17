@@ -168,6 +168,8 @@ The team used Slack where we had two meetings per day and to message in for quic
 
 The Team used Slack team channel Canvas to ensure everyone stayed updated on project progress and discussions.
 
+[Back to top](#marios-reboot)
+
 ## Deployment
 
 The live deployed application can be found deployed on [GitHub pages](https://vcgithubcode.github.io/retro-game/).

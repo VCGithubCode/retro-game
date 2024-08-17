@@ -2,15 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Super Mario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link href="assets/favicon/favicon.ico" rel="icon" type="image/x-icon">
+  <title>404 - Super Mario</title>
 </head>
 
 <body>
-<h1 id="error-header">404 Error</h1>
-<p id="error-text">Uh Oh! Let's get you back in the game</p>
-<a id="error-link" href="index.html">Back to Home</a>
+  <!-- Scene -->
+  <div class="scene">
+    <!-- Image of the title -->
+    <img id="title" src="/assets/images/title.webp" alt="an image of mario reboot text">
+    <!-- Clouds going across screen -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="cloud cloud4"></div>
+    <!-- Error title and message -->
+    <h1 id="error-header">Page Not Found<br/>Error 404!</h1>
+    <p id="error-text">
+      Oh no, Mario can't find you!<br/>Lets get you back to the homepage.
+    </p>
+    <!-- Link back to home page -->
+    <div>
+      <a href="/index.html">
+        <img id="error-link" src="/assets/images/homepage.webp" alt="Homepage">
+      </a>
+    </div>
+  </div>
 </body>
 
 </html>
