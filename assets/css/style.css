@@ -4,12 +4,34 @@
   box-sizing: border-box;
 }
 
+/* General body settings */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Container for the scene and footer */
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .scene {
   width: 100dvw;
   height: 100dvh;
   background-color: #049cd8;
 }
-  
+
+.header-home {
+  display: none;
+}
 
 #landing-header {
   display: flex;
@@ -32,6 +54,11 @@
   flex-shrink: 0;
 }
 
+label.menu-icon {
+  opacity: 1;
+  color: #ffffff;
+  background-color: #000000;
+}
 
 .menu-icon {
   cursor: pointer;
@@ -40,6 +67,7 @@
   height: 25px;
   position: relative;
   z-index: 1001;
+  background-color: #ffffff00;
 }
 
 .menu-icon::before,
@@ -49,7 +77,8 @@
   position: absolute;
   width: 100%;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
+  color: #000;
   transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
 }
 
@@ -147,11 +176,16 @@ h1 {
   z-index: 5;
   display: grid;
   margin-inline: auto;
-  top: 45%;
-  background: black;
+  top: 35%;
+  background: #000000c7;
   border-radius: 16px;
   padding: 16px;
-  border: 1px solid white;
+  border: 2px solid white;
+}
+
+#start:hover, #start:focus,
+#start2:hover, #start2:focus {
+box-shadow: 0 0 20px 10px #ffffff;
 }
 
 #start2 {
@@ -161,33 +195,32 @@ h1 {
     z-index: 5;
     display: grid;
     margin-inline: auto;
-    top: 65%;
-    background: black;
+    top: 50%;
+    background: #ffffff9d;
     border-radius: 16px;
     padding: 16px;
-    border: 1px solid white;
+    border: 2px solid #fff;
 }
 
 #start img {
-  width: 90%;
+  width: 100%;
 }
 
 #start2 img {
-  width: 90%;
+  width: 100%;
 }
 
+.mario {
+  background-image: url(http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904);
+  background-size: 50px;
+  width: 50px;
+  height: 66px;
+  position: absolute;
+  bottom: 50px;
+  transition: all 1s ease;
+  animation: animateMario 3s linear forwards infinite;
+}
 
-  .mario {
-    background-image: url("http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904");
-    background-size: 50px;
-    width: 50px;
-    height: 66px;
-    position: absolute;
-    bottom: 100px;
-    transition: all 1s ease;
-    animation: animateMario 3s linear forwards infinite;
-  }
-  
   @keyframes animateMario {
     0% {
       margin-left: -50px;
@@ -221,7 +254,7 @@ h1 {
     position: absolute;
     height: 50px;
     width: 50px;
-    bottom: 250px;
+    bottom: 180px;
     left: 70vw;
     z-index: 1;
     animation: animateBox 3s ease forwards infinite;
@@ -230,7 +263,7 @@ h1 {
   
   @keyframes animateBox {
     0% {
-      bottom: 250px;
+      bottom: 200px;
     }
     50% {
       bottom: 260px;
@@ -246,10 +279,10 @@ h1 {
     position: absolute;
     height: 50px;
     width: 50px;
-    bottom: 250px;
+    bottom: 180px;
     left: 70vw;
     animation: animateCoin 3s ease forwards infinite;
-    animation-delay: 2.4s;
+    animation-delay: 2.1s;
   }
   
   @keyframes animateCoin {
@@ -305,22 +338,24 @@ h1 {
 
 footer {
   display: flex;
-  justify-content: center; /* Center align items */
+  justify-content: center;
   align-items: center;
   width: 100%;
+  background: url(../images/bricks.webp);
+  background-color: black;
 }
 
 .card-container {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap in case of overflow */
-  justify-content: center; /* Center the cards within the container */
-  gap: 20px; /* Space between each card */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .flip-card {
   background-color: transparent;
   width: 50px;
-  height: 50px; /* Adjusted height for icon display */
+  height: 50px;
   perspective: 1000px;
 }
 
@@ -362,7 +397,7 @@ footer {
 .flip-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image fits within bounds */
+  object-fit: cover;
   max-width: 100px;
   max-height: 100px;
   display: block;
@@ -408,7 +443,7 @@ footer {
 }
 
 /* Media query for smaller screens for errors */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #error-text {
     font-size: 24px;
     margin-top: 50px;
@@ -426,14 +461,14 @@ footer {
 }
 
 /* Media queries for tablet and larger 768px */
-@media screen and (min-width:768px){
+/* @media screen and (min-width:768px){
   .flip-card{
     padding-left: 190px;
   }
-}
+} */
 
 /*large devices (laptops and desktops,992px and up)*/
-@media screen and (min-width:992px){
+/* @media screen and (min-width:992px){
   .flip-card{
     padding-left: 550px;
   }
