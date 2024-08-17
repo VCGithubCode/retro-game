@@ -10,11 +10,33 @@
 </head>
 
 <body>
-  <div class="scene">
-    
-<h1>&#8203;</h1>
-<img id="title" src="assets/images/title.webp" alt="an image of mario reboot text">
-  
+  <header id="landing-header">
+    <h1 class="header-home">&#8203;</h1>
+    <div class="image-container">
+      <img id="title" src="assets/images/title.webp" alt="an image of mario reboot text">
+    </div>
+    <div class="nav-menu">
+      <label for="menu-toggle">&#8203;</label>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+      </label>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            <img src="assets/images/developers.webp" alt="Meet the developers" class="nav-image">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            <img src="assets/images/contact.webp" alt="contact us" class="nav-image">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+    <div class="scene">
+
     <div class="cloud cloud1"></div>
     <div class="cloud cloud2"></div>
     <div class="cloud cloud3"></div>
@@ -31,80 +53,85 @@
 
     <div class="floor">
     </div>
-
-  </div>
-  </div>
-
-  <div>
-    <ul class="nav justify-content-end">
-      <li class="nav-item">
-        <a class="nav-link" href="about.html"><img src="assets/images/developers.webp" alt="Meet the developers" class="nav-image"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html"><img src="assets/images/contact.webp" alt="contact us" class="nav-image"></a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<a href="memory.html" id="start">
-  <img src="img/memory_game/memory_game_button.png">
-</a>
-<br>
-<a href="game.html" id="start2">
-  <img src="img/memory_game/mario_game_title.png">
-</a>
-
- <footer>
-  <div class="flip-card footer">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc" alt="Avatar" style="width:100px;height:100px;">
-      </div>
-      <div class="flip-card-back">
-      <h1>
-        <a href="www.facebook.com">
-        <i class="fa-brands fa-facebook"></i></a>
-        </h1>
-      </div>
+    <div class="game-choices">
+      <a href="memory.html" id="start">
+        <img src="img/memory_game/memory_game_button.png">
+      </a>
+      <br>
+      <a href="game.html" id="start2">
+        <img src="img/memory_game/mario_game_title.png">
+      </a>
     </div>
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc" alt="Avatar" style="width:100px;height:100px;">
-      </div>
-      <div class="flip-card-back">
-      <h1>
-        <a href="www.linkedin.com">
-        <i class="fa-brands fa-linkedin"></i></a>
-        </h1>
-      </div>
     </div>
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc" alt="Avatar" style="width:100px;height:100px;">
+    <footer>
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook footer-icon"></i>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="card-container">
+              <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+            <a href="https://www.linkedin.com">
+              <i class="fa-brands fa-linkedin footer-icon"></i>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            <div class="card-container">
+              <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram footer-icon"></i>
+            </a>
+            </div>
+            </div>
       </div>
-      <div class="flip-card-back">
-      <h1>
-        <a href="www.instagram.com">
-        <i class="fa-brands fa-instagram"></i></a>
-        </h1>
       </div>
-    </div>
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc" alt="Avatar" style="width:100px;height:100px;">
-      </div>
-      <div class="flip-card-back">
-      <h1>
-        <a href="www.github.com">
-        <i class="fa-brands fa-github"></i></a>
-        </h1>
-      </div>
-    </div>
-
-  </div>
-  
-  </footer>
+      
+      <div class="card-container">
+        <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar">
+            </div>
+            <div class="flip-card-back">
+            <a href="https://www.github.com">
+              <i class="fa-brands fa-github footer-icon"></i>
+            </a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </footer>
  <!-- Font Awesome kit -->
  <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 
