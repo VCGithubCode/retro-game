@@ -146,6 +146,28 @@ We have used the recommended [JShint Validator](https://jshint.com) to validate 
 
 ## Agile Development Process
 
+**Agile Methodology**
+
+Our project uses Agile methodology, a framework that enables us to respond to the unpredictability of building software through incremental, iterative work cadences, known as sprints. This approach fosters adaptability and encourages a rapid and flexible response to change, which is vital in the dynamic environment of software development.
+
+At the start of each sprint, our team engages in sprint planning to set the direction for our upcoming work, involving prioritization of the product backlog to address the most critical tasks first, defining clear sprint goals aligned with project milestones, and assigning tasks based on expertise and workload. Throughout development, we navigate trade-offs between scope, quality, time, and resources to maintain a balance between delivering high-quality work efficiently and managing priorities. Adopting Agile methodologies allows us to remain adaptable and focused, ensuring we meet user needs while striving for excellence.
+
+Through this process, user stories, issues, and tasks were planned, then tracked on a daily basis using the basic Kanban board.
+
+**GitHub Issues**
+
+[GitHub Issues]() served as an Agile tool.
+
+It also helped with iterations on a daily basis.
+
+scrren shots of open and closed issues here
+
+**Collaboration Tools** 
+
+The team used Slack where we had two meetings per day and to message in for quick collaboration purposes and Github projects to track ideas, User Stories, Bugs and Time plan.
+
+The Team used Slack team channel Canvas to ensure everyone stayed updated on project progress and discussions.
+
 ## Deployment
 
 The live deployed application can be found deployed on [GitHub pages](https://vcgithubcode.github.io/retro-game/).
