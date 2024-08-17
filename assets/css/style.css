@@ -309,4 +309,21 @@ width: 200px;
     height: 70px;
     width: 240px;
   }
+  .flip-card{
+    padding-left: 2px;
+  }
+}
+
+/*Media queries for tablet and larger 768px*/
+@media screen and (min-width:768px){
+  .flip-card{
+    padding-left: 190px;
+  }
+}
+
+/*large devices (laptops and desktops,992px and up)*/
+@media screen and (min-width:992px){
+  .flip-card{
+    padding-left: 550px;
+  }
 }
