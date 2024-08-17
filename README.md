@@ -9,6 +9,7 @@ We would do this by giving the user the chance to relive play a version of the m
 
 ## Contents
 
+  - [Introduction](#introduction)
   - [UX](#ux)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
@@ -21,6 +22,21 @@ We would do this by giving the user the chance to relive play a version of the m
   - [Credits](#credits)
 
 ## UX
+
+### User Experience
+
+Our platform offers users the chance to relive the favourtie pixel game in playing a version of Super Mario. The user gets the chance to really enjoy their gaming time, relive the feeling of playing their old games, beat their own score and just enjoy gaming.
+
+**The Ideal User**
+
+- Somone who enjoys retro gaming.
+- Someoe who enjoys SUper Mario.
+- Somone who enjoy gaming and wants to have fun.
+
+**Site Goals**
+
+- To provide the user the opportunity to play a version of Super Mario.
+- To provide the user the chance to enjoy themselves playing retro games.
 
 ### Colour Scheme
 
