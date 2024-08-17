@@ -148,6 +148,73 @@ We have used the recommended [JShint Validator](https://jshint.com) to validate 
 
 ## Deployment
 
+The live deployed application can be found deployed on [GitHub pages](https://vcgithubcode.github.io/retro-game/).
+
+### Deployment to GitHub Pages
+
+This project was deployed on GitHub pages using the following steps:
+
+- From the project's repository, go to the settings tab.
+
+- From the left-hand-menu, select the pages tab.
+
+- Select the Main branch from under the Source section dropdown and click Save.
+
+- After a few minutes, a message will display to indicate a successful deployment and provide a Live link.
+
+### Local Deployment
+
+**GitHub**
+
+First a new reposiotry was created in github then this project can be cloned or forked in order to make a local copy on your own system.
+
+Once the project is cloned or forked, in order to run it locally you will need to use the command 'npm run start' to start the app.
+
+
+**Version Control**
+
+For version control the following steps were made:
+
+- If any changes were made to the Gitpod or VS Code project.
+
+- First files were made ready for commit with command - 'git add filename or git add .' second option to add all files.
+
+- To commit the changes using the following command - git commit -m "This is my commit" Note the brief description at the end of the command to make you aware of what changes have occurred.
+
+- To then move the changes to GitHub, use the following command - git push your branch name.
+
+- Create a pull request in GitHub which another member can then approve.
+
+**Cloning**
+
+You can clone the repository by following these steps:
+
+- Navigate to the repository you choose to clone in your GitHub.
+
+- Clicking on the arrow of the green button named "Code" at the top of the file.
+
+- Then select "Local" then under local select "HTTPS" and then copy that URL.
+
+- Navigate to your code editor and within the terminal change the directory to the location you wish to clone the repository to.
+
+- Type "git clone" and paste the copied HTTPS link from GitHub.
+
+- Press enter and git will clone the repository to your local machine.
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+**Forking**
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository. You can fork this repository by using the following steps:
+
+- Log in to GitHub and locate the GitHub Repository.
+
+- At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+- Click the create button, once clicked, you should now have a copy of the original repository in your own GitHub account!
+
+[Back to top](#marios-reboot)
+
 ## Credits
 
 ### Content
@@ -171,9 +238,13 @@ We have used the recommended [JShint Validator](https://jshint.com) to validate 
 
 A big thank you to all fellow team members for their great work:
 
-- Vernell: [Github](https://github.com/VCGithubCode)
-- Amy: [Github](https://github.com/NorfolkTate)
-- Fernando: [GitHub](https://github.com/Goncalves95)
-- Meghana: [Github](https://github.com/Meghanarajvinakota)
-- Riman: [Github]()
-- Sam: [Github](https://github.com/sam2829)
+| Team Member | Role | GitHub |
+| --- | --- | --- |
+| Amy | Presentation, Frontent | [Github](https://github.com/NorfolkTate) |
+| Fernando | Game Development, Design | [GitHub](https://github.com/Goncalves95) |
+| Meghana | Wireframes, Frontend | [Github](https://github.com/Meghanarajvinakota) |
+| Riman | Epics, Agile | [Github]() |
+| Sam | Documentation, Frontend | [Github](https://github.com/sam2829) |
+| Vernell | Scrum Lead, Deployment, Project Setup | [Github](https://github.com/sam2829) |
+
+[Back to top](#marios-reboot)
