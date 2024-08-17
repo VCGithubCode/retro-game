@@ -23,6 +23,10 @@ we've used [coolors.co](https://coolors.co/000000-049cd8-fbd000-e52521-43b047) t
 
 ![Coolors Screenshot](/docs/readme_screenshots/coolors-screenshot.png)
 
+### Typography
+
+This was borrowed from the original super mario retro theme.
+
 ## User Stories
 
 ### Landing Page
