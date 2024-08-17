@@ -131,6 +131,11 @@ We have used the recommended [JShint Validator](https://jshint.com) to validate 
 
 | Source | Location | Notes |
 | --- | --- | --- |
+| [Mario Code Challenge](https://code.hatchxr.com/?step=7) | JavaScript | Used for learning and inspiration. |
+| [Mario Js Vanilla](https://codepen.io/yananas/pen/xrjaGX) |JavaScript | Used for learning and inspiration. |
+| [Super Mario Python](https://github.com/mx0c/super-mario-python?tab=readme-ov-file) | Research | Used for learning and inpiration. |
+| [ Mario js-dos](https://js-dos.com/mario/) | JavaScript | Used for learning and inspiration. |
+| [Super Mario em js](https://www.google.com/search?q=super+mario+em+js&rlz=1C1ONGR_enGB1059GB1059&oq=super+ma&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg7Mg4IAhBFGCcYOxiABBiKBTISCAMQLhhDGNQCGLEDGIAEGIoFMhIIBBAuGEMY1AIYsQMYgAQYigUyEggFEC4YQxjUAhixAxiABBiKBTISCAYQLhhDGNQCGLEDGIAEGIoFMgYIBxBFGEDSAQkzMjUyajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8) | Research | Used for learning and inspiration. |
 
 ### Media
 
@@ -148,11 +153,3 @@ A big thank you to all fellow team members for their great work:
 - Meghana: [Github](https://github.com/Meghanarajvinakota)
 - Riman: [Github]()
 - Sam: [Github](https://github.com/sam2829)
-
-
-** Cresdit: **
-* https://code.hatchxr.com/?step=7
-* https://codepen.io/yananas/pen/xrjaGX
-* https://github.com/mx0c/super-mario-python?tab=readme-ov-file
-* https://js-dos.com/mario/
-* https://www.google.com/search?q=super+mario+em+js&rlz=1C5CHFA_enCH840CH840&oq=super+mario+em+js&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDI5ODlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:863ee308,vid:4WDCv1O13AY,st:0
