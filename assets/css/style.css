@@ -1,14 +1,118 @@
-.scene {
-  width: 100vw;
-  height: 100vh;
-  background-color: #049cd8;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-#screen {
-  display: block;
-  image-rendering: pixelated;
-  height: 100vh;
-  margin: auto;
+.scene {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #049cd8;
+}
+  
+
+#landing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000000;
+  width: 100%;
+  padding: 10px;
+}
+
+.image-container {
+  flex-grow: 1;
+}
+
+#title {
+  max-width: 100%;
+}
+
+.nav-menu {
+  flex-shrink: 0;
+}
+
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  z-index: 1001;
+}
+
+.menu-icon::before,
+.menu-icon::after,
+.menu-icon span {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
+}
+
+.menu-icon::before {
+  top: 0;
+}
+
+.menu-icon::after {
+  bottom: 0;
+}
+
+.menu-icon span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-icon::before {
+  transform: rotate(45deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-icon::after {
+  transform: rotate(-45deg);
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+#menu-toggle:checked + .menu-icon span {
+  transform: scale(0);
+}
+
+.nav {
+  position: absolute;
+  top: 130px;
+  right: 0;
+  z-index: 10;
+  border-radius: 5px;
+  padding: 10px;
+  background: #000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  display: none;
+  width: auto;
+}
+
+#menu-toggle:checked ~ .nav {
+  transform: translateX(0);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-image {
+  width: 75%;
 }
 
 h1 {
@@ -20,216 +124,204 @@ h1 {
   top: 300px;
 }
 
-title {
+
+#screen {
+  display: block;
+  image-rendering: pixelated;
+  height: 100vh;
+  margin: auto;
+}
+
+#game-choices {
   display: flex;
+  flex-direction: column;
   position: absolute;
-  width: 50%;
-  margin: 0 auto;
-  bottom: 52%;
-  left: 26%;
-}
-
-.nav {
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  z-index: 1000;
-  border-radius: 5px;
-  padding: 10px;
-  display: flex;
-  list-style-type: none;
-  gap: 20px;
-
-
-}
-
-.nav-image {
-  height: 90x;
-  width: 200px;
-}
-
-.nav-link {
-  font-weight: bold;
-  padding: 10px;
-  font-style: inherit;
-}
-
-.nav-link:hover {
-  text-decoration: none;
+  top: 50%;
+  margin-inline: auto;
 }
 
 #start {
   position: absolute;
-  top: 65%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: grid;
+  margin-inline: auto;
+  top: 45%;
+  background: black;
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid white;
 }
 
 #start2 {
-  position: absolute;
-  top: 65%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-}
-
-#start2 img {
-  height: 75px;
-  width: 200px;
- 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: grid;
+    margin-inline: auto;
+    top: 65%;
+    background: black;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px solid white;
 }
 
 #start img {
-  height: 75px;
-  width: 200px;
-}
-.mario {
-  background-image: url("http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904");
-  background-size: 50px;
-  width: 50px;
-  height: 66px;
-  position: fixed;
-  bottom: 100px;
-  transition: all 1s ease;
-  animation: animateMario 3s linear forwards infinite;
+  width: 90%;
 }
 
-@keyframes animateMario {
-  0% {
-    margin-left: -50px;
-  }
-
-  60% {
-    transform: translateY(0px);
-  }
-
-  70% {
-    transform: translateY(-90px);
-  }
-
-  90% {
-    transform: translateY(0px);
-  }
-
-  100% {
-    margin-left: 100vw;
-  }
+#start2 img {
+  width: 90%;
 }
 
-.cloud {
-  background-image: url("https://i.pinimg.com/originals/8a/49/4b/8a494b1e5e26314180a1ded2c8d0a6a5.png");
-  background-size: contain;
-  width: 100px;
-  height: 80px;
-  margin: 20px;
-  position: fixed;
-}
 
-.box {
-  background-image: url("https://media.giphy.com/media/GPtziRMoxcwuc/giphy.gif");
-  background-size: cover;
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  bottom: 250px;
-  left: 70vw;
-  z-index: 1;
-  animation: animateBox 3s ease forwards infinite;
-  animation-delay: 2.1s;
-}
-
-@keyframes animateBox {
-  0% {
+  .mario {
+    background-image: url("http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904");
+    background-size: 50px;
+    width: 50px;
+    height: 66px;
+    position: absolute;
+    bottom: 100px;
+    transition: all 1s ease;
+    animation: animateMario 3s linear forwards infinite;
+  }
+  
+  @keyframes animateMario {
+    0% {
+      margin-left: -50px;
+    }
+    60% {
+      transform: translateY(0px);
+    }
+    70% {
+      transform: translateY(-90px);
+    }
+    90% {
+      transform: translateY(0px);
+    }
+    100% {
+      margin-left: 100vw;
+    }
+  }
+  
+  .cloud {
+    background-image: url("https://i.pinimg.com/originals/8a/49/4b/8a494b1e5e26314180a1ded2c8d0a6a5.png");
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+    margin: 20px;
+    position: absolute;
+  }
+  
+  .box {
+    background-image: url("https://media.giphy.com/media/GPtziRMoxcwuc/giphy.gif");
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
     bottom: 250px;
+    left: 70vw;
+    z-index: 1;
+    animation: animateBox 3s ease forwards infinite;
+    animation-delay: 2.1s;
   }
-
-  50% {
-    bottom: 260px;
+  
+  @keyframes animateBox {
+    0% {
+      bottom: 250px;
+    }
+    50% {
+      bottom: 260px;
+    }
+    100% {
+      transform: scale(0);
+    }
   }
-
-  100% {
-    transform: scale(0);
-  }
-}
-
-.coin {
-  background-image: url("http://piq.codeus.net/static/media/userpics/piq_132831_400x400.png");
-  background-size: cover;
-  position: fixed;
-  height: 50px;
-  width: 50px;
-  bottom: 250px;
-  left: 70vw;
-  animation: animateCoin 3s ease forwards infinite;
-  animation-delay: 2.4s;
-}
-
-@keyframes animateCoin {
-  0% {
+  
+  .coin {
+    background-image: url("http://piq.codeus.net/static/media/userpics/piq_132831_400x400.png");
+    background-size: cover;
+    position: absolute;
+    height: 50px;
+    width: 50px;
     bottom: 250px;
+    left: 70vw;
+    animation: animateCoin 3s ease forwards infinite;
+    animation-delay: 2.4s;
+  }
+  
+  @keyframes animateCoin {
+    0% {
+      bottom: 250px;
+    }
+    50% {
+      bottom: 350px;
+    }
+    100% {
+      bottom: 250px;
+      transform: scale(0);
+    }
+  }
+  
+  .floor {
+    background-image: url("https://t3.rbxcdn.com/1977bb7bbfc6b959cf6556daf6381793");
+    background-size: 50px;
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+  }
+  
+  @keyframes animateCloud {
+    0% {
+      margin-left: -1000px;
+    }
+    100% {
+      margin-left: 100%;
+    }
+  }
+  
+  .cloud1 {
+    animation: animateCloud 35s linear infinite;
+    transform: scale(0.75);
+  }
+  
+  .cloud2 {
+    animation: animateCloud 20s linear infinite;
+    transform: scale(1);
+  }
+  
+  .cloud3 {
+    animation: animateCloud 30s linear infinite;
+    transform: scale(1.25);
+  }
+  
+  .cloud4 {
+    animation: animateCloud 18s linear infinite;
+    transform: scale(1.5);
   }
 
-  50% {
-    bottom: 350px;
-  }
-
-  100% {
-    bottom: 250px;
-    transform: scale(0);
-  }
+footer {
+  display: flex;
+  justify-content: center; /* Center align items */
+  align-items: center;
+  width: 100%;
 }
 
-.floor {
-  background-image: url("https://t3.rbxcdn.com/1977bb7bbfc6b959cf6556daf6381793");
-  background-size: 50px;
-  position: fixed;
-  width: 100vw;
-  height: 100px;
-  bottom: 0;
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap in case of overflow */
+  justify-content: center; /* Center the cards within the container */
+  gap: 20px; /* Space between each card */
 }
-
-@keyframes animateCloud {
-  0% {
-    margin-left: -1000px;
-  }
-
-  100% {
-    margin-left: 100%;
-  }
-}
-
-.cloud1 {
-  animation: animateCloud 35s linear infinite;
-  transform: scale(0.75);
-}
-
-.cloud2 {
-  animation: animateCloud 20s linear infinite;
-  transform: scale(1);
-}
-
-.cloud3 {
-  animation: animateCloud 30s linear infinite;
-  transform: scale(1.25);
-}
-
-.cloud4 {
-  animation: animateCloud 18s linear infinite;
-  transform: scale(1.5);
-}
-
-/*Footer*/
 
 .flip-card {
   background-color: transparent;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px; /* Adjusted height for icon display */
   perspective: 1000px;
-  display: flex;
-  gap: 100px;
-  padding-left: 550px;
-
 }
 
 .flip-card-inner {
@@ -239,45 +331,53 @@ title {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
 .flip-card-front {
   background-color: #bbb;
   color: black;
-
-
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #ffffff;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotateY(180deg);
 }
 
-.fa-brands,
-.fab {
-  font-weight: 400;
-  position: absolute;
-  left: 25%;
-  bottom: 272px;
-  display: flex;
-  color: #049cd8;
-
+.flip-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image fits within bounds */
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
 }
+
+.footer-icon {
+  color: #049cd8;
+  font-size: 24px;
+}
+
+.fa-brands {
+  color: #049cd8;
+}
+
 
 /* Styles for error page */
 
@@ -320,28 +420,21 @@ title {
     height: 70px;
     width: 240px;
   }
-
-  .flip-card {
+  .flip-card{
     padding-left: 2px;
   }
 }
 
-/*Media queries for tablet and larger 768px*/
-@media screen and (min-width:768px) {
-  .flip-card {
+/* Media queries for tablet and larger 768px */
+@media screen and (min-width:768px){
+  .flip-card{
     padding-left: 190px;
-  }
-  .nav-toggle-label{
-    display:none;
   }
 }
 
 /*large devices (laptops and desktops,992px and up)*/
-@media screen and (min-width:992px) {
-  .flip-card {
+@media screen and (min-width:992px){
+  .flip-card{
     padding-left: 550px;
-  }
-  .nav-toggle-label{
-    display:none;
   }
 }
