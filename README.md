@@ -213,6 +213,7 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 
 - Click the create button, once clicked, you should now have a copy of the original repository in your own GitHub account!
 
+[Back to top](#marios-reboot)
 
 ## Credits
 
@@ -237,9 +238,13 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 
 A big thank you to all fellow team members for their great work:
 
-- Vernell: [Github](https://github.com/VCGithubCode)
-- Amy: [Github](https://github.com/NorfolkTate)
-- Fernando: [GitHub](https://github.com/Goncalves95)
-- Meghana: [Github](https://github.com/Meghanarajvinakota)
-- Riman: [Github]()
-- Sam: [Github](https://github.com/sam2829)
+| Team Member | Role | GitHub |
+| --- | --- | --- |
+| Amy | Presentation, Frontent | [Github](https://github.com/NorfolkTate) |
+| Fernando | Game Development, Design | [GitHub](https://github.com/Goncalves95) |
+| Meghana | Wireframes, Frontend | [Github](https://github.com/Meghanarajvinakota) |
+| Riman | Epics, Agile | [Github]() |
+| Sam | Documentation, Frontend | [Github](https://github.com/sam2829) |
+| Vernell | Scrum Lead, Deployment, Project Setup | [Github](https://github.com/sam2829) |
+
+[Back to top](#marios-reboot)
