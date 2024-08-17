@@ -1,19 +1,42 @@
 # [Marios Reboot](https://vcgithubcode.github.io/retro-game/)
 
-Be able to to relive and play your favourite pixel game in Super Mario.
+![Project Title](/assets/images/title.webp)
+
+## Introduction
+
+Our mission for this project was to celebrate the great pixel games of old.
+We would do this by giving the user the chance to relive play a version of the most favourite pixel game out of all of them in Super Mario.
 
 ## Contents
 
+  - [Introduction](#introduction)
   - [UX](#ux)
     - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
   - [User Stories](#user-stories)
   - [Wireframes](#wireframes)
   - [Features](#features)
   - [Tools & Technologies Used](#tools--technologies-used)
   - [Testing](#testing)
   - [Agile Development Process](#agile-development-process)
+  - [Credits](#credits)
 
 ## UX
+
+### User Experience
+
+Our platform offers users the chance to relive the favourtie pixel game in playing a version of Super Mario. The user gets the chance to really enjoy their gaming time, relive the feeling of playing their old games, beat their own score and just enjoy gaming.
+
+**The Ideal User**
+
+- Somone who enjoys retro gaming.
+- Someoe who enjoys SUper Mario.
+- Somone who enjoy gaming and wants to have fun.
+
+**Site Goals**
+
+- To provide the user the opportunity to play a version of Super Mario.
+- To provide the user the chance to enjoy themselves playing retro games.
 
 ### Colour Scheme
 
@@ -142,6 +165,7 @@ We have used the recommended [JShint Validator](https://jshint.com) to validate 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Favicon](https://www.favicon.cc/?action=icon&file_id=898422) | Favicon | Created by ineedicons |
+| [Mario Retro Font](https://www.mariowiki.com/List_of_fonts#Classic_Super_Mario_font) | Fonts | Created by mariowiki | 
 
 ### Acknowledgements
 
