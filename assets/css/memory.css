@@ -9,6 +9,10 @@ body {
   background: #212121;
 }
 
+body, html {
+  overflow: auto !important;
+}
+
 button {
   font-family: "Reddit Mono";
 }
@@ -21,7 +25,7 @@ button {
 }
 
 .game {
-  padding: 50px 0;
+  padding: 20px 0;
 }
 .game__title {
   font-size: 32px;
@@ -107,4 +111,8 @@ button {
 }
 .game__card.active {
   transform: rotateY(180deg);
-}/*# sourceMappingURL=style.css.map */
+}
+
+footer {
+  display: flex !important;
+}
