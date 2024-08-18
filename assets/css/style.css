@@ -478,3 +478,113 @@ footer {
     padding-left: 550px;
   }
  } */
+
+ /* Styling for thank you page */
+
+.box-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box styling */
+.centered-box {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    background-color: #ffffff9d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 900%;
+    left: 5%;
+    opacity: 0;  /* Initially hidden */
+    transform: scale(0);  /* Start from a small scale */
+    transition: transform 3s ease-out, opacity 3s ease-out;
+    animation: expand-box 3s ease-out forwards;
+}
+
+/* Keyframes to handle the expansion */
+@keyframes expand-box {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.centered-box h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #333;
+}
+
+.centered-box p {
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #555;
+}
+
+.centered-box a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#homepage-link {
+  height: 90px;
+  width: 300px;
+}
+
+/* Media queries for thank you page for page smaller than 768px  */
+@media (max-width: 768px) {
+  .centered-box {
+    width: 90%;
+    left: 5%;
+  }
+  .centered-box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+
+  .centered-box p {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #555;
+  }
+
+  #homepage-link {
+  height: 70px;
+  width: 240px;
+  }
+}
+
+/* Media queries for thank you page for page smaller than 480px  */
+@media only screen and (max-width: 480px) {
+  .centered-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .centered-box p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #555;
+  }
+
+  #homepage-link {
+  height: 70px;
+  width: 190px;
+  }
+}
+
