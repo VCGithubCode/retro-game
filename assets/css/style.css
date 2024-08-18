@@ -555,7 +555,6 @@ footer {
   font-size: 8.3px;
   height: 145px;
 }
-
 }
 
 /* Media queries for tablet and larger 768px */
@@ -592,8 +591,6 @@ footer {
   height: 90px;
   width: 300px;
   }
-
-  
 }
 
 /*large devices (laptops and desktops,992px and up)*/
@@ -602,3 +599,5 @@ footer {
     padding-left: 550px;
   }
  } */
+}*/
+
