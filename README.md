@@ -83,7 +83,7 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
 - **Thank You Page**
 
-- The thank you page is to say thank you to users for getting in touch.
+  - The thank you page is to say thank you to users for getting in touch.
 
 - **Navbar**
 
