@@ -417,7 +417,7 @@ footer {
 /* Styles for error page */
 
 #error-header {
-  top: 200px;
+  top: 300px;
 }
 
 #error-text {
@@ -427,7 +427,7 @@ footer {
   left: 5%;
   font-size: 30px;
   position: fixed;
-  top: 330px;
+  top: 430px;
 }
 
 #error-link {
@@ -435,7 +435,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   position: fixed;
-  top: 480px;
+  top: 580px;
   color: #E52521;
   text-decoration: none;
   height: 90px;
@@ -443,7 +443,7 @@ footer {
 }
 
 /* Media query for smaller screens for errors */
-/* @media (max-width: 768px) {
+/*@media (max-width: 768px) {
   #error-text {
     font-size: 24px;
     margin-top: 50px;
