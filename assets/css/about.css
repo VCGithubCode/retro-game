@@ -9,12 +9,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: Madimi One;
   }
-
+  
 .title {
     padding: 30px;
     width: 100%;
     max-width: 800px;
+}
+
+.home {
+  display: flex;
+  align-self: flex-end;
+  padding-left: 40px;
+}
+
+.home img {
+  width: 150px;
+}
+
+.mushroom {
+  display: flex;
+  align-self: flex-start;
+  padding-left: 30px;
+  top: 150px;
+  position: fixed;
+  z-index: 1;
+}
+
+.mushroom img {
+  width: 70px;
+  height: auto;
 }
 
 .about {
@@ -31,12 +56,22 @@
     align-items: center;
     margin: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 .dev img {
     height: 150px;
 }
 
+.dev p {
+  max-width: 200px;
+  padding-bottom: 10px;
+}
+
+.github img {
+  height: 30px;
+  padding-bottom: 10px;
+}
 
 footer {
     display: flex;
@@ -115,3 +150,52 @@ footer {
   .fa-brands {
     color: #049cd8;
   }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .home img {
+      width: 220px;
+  }
+  .mushroom {
+      padding-left: 50px;
+      top: 200px;
+  }
+  .dev img {
+      height: 300px;
+  }
+  .dev p {
+    max-width: 350px;
+    padding-bottom: 25px;
+    font-size: 150%;
+  }
+  .github img {
+    height: 90px;
+    padding-bottom: 25px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .mushroom {
+    padding-left: 60px;
+    top: 260px;
+  }
+  .mushroom img {
+    width: 100px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home img {
+    width: 270px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .home img {
+    width: 350px;
+    padding-right: 70px;
+  }
+}
