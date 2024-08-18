@@ -122,7 +122,7 @@ label.menu-icon {
   z-index: 10;
   border-radius: 5px;
   padding: 10px;
-  background: transparent;
+  background:transparent;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   display: none;
@@ -340,6 +340,8 @@ box-shadow: 0 0 20px 10px #ffffff;
     transform: scale(1.5);
   }
 
+/*Footer*/
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -460,6 +462,9 @@ footer {
     height: 70px;
     width: 240px;
   }
+  .nav{
+    background-color: #000000;
+  }
   /* .flip-card{
     padding-left: 2px;
   } */
@@ -471,10 +476,3 @@ footer {
     padding-left: 190px;
   } */
 }
-
-/*large devices (laptops and desktops,992px and up)*/
-  /* @media screen and (min-width:992px){
-  .flip-card{
-    padding-left: 550px;
-  }
- } */
