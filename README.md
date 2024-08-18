@@ -275,7 +275,8 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Favicon](https://www.favicon.cc/?action=icon&file_id=898422) | Favicon | Created by ineedicons |
-| [Mario Retro Font](https://www.mariowiki.com/List_of_fonts#Classic_Super_Mario_font) | Fonts | Created by mariowiki | 
+| [Mario Retro Font](https://www.mariowiki.com/List_of_fonts#Classic_Super_Mario_font) | Fonts | Created by mariowiki |
+| canva | Images | canva |
 
 ### Acknowledgements
 
