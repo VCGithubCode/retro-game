@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap");
+body {
+  font-family: "Reddit Mono";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  font-style: normal;
+  color: #fff;
+  background: #212121;
+}
+
+button {
+  font-family: "Reddit Mono";
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.game {
+  padding: 50px 0;
+}
+.game__title {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.game__text {
+  text-align: center;
+}
+.game__subtitle {
+  display: none;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.game__subtitle.active {
+  display: block;
+}
+.game__board {
+  max-width: 300px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  margin: 50px auto;
+  padding: 30px;
+}
+.game__card {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  perspective: 50px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  position: relative;
+}
+.game__card_front, .game__card_back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  font-weight: 500;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: #4c4c4c;
+  box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+.game__card_front {
+  transform: rotateY(180deg);
+}
+.game__img {
+  max-width: 45px;
+  width: 100%;
+  max-height: 45px;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.game__btn {
+  display: block;
+  outline: none;
+  background: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #212121;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.game__card.active {
+  transform: rotateY(180deg);
+}/*# sourceMappingURL=style.css.map */
