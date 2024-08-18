@@ -75,7 +75,7 @@ startButton.style.cssText = `
   display: grid;
   margin-inline: auto;
   top: 35%;
-  background: #000000c7;
+  background: red;
   border-radius: 16px;
   padding: 16px;
   border: 2px solid white;
