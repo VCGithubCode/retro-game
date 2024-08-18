@@ -169,6 +169,10 @@ h1 {
   margin-inline: auto;
 }
 
+.game-buttons {
+  width: 80%;
+}
+
 #start {
   position: absolute;
   left: 50%;
@@ -338,10 +342,11 @@ box-shadow: 0 0 20px 10px #ffffff;
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   background: url(../images/bricks.webp);
+  background-size: cover;
   background-color: black;
 }
 
@@ -443,8 +448,8 @@ footer {
 }
 
 /* Media query for smaller screens for errors */
-/*@media (max-width: 768px) {
-  #error-text {
+ @media (max-width: 768px) {
+ #error-text {
     font-size: 24px;
     margin-top: 50px;
   }
@@ -455,21 +460,21 @@ footer {
     height: 70px;
     width: 240px;
   }
-  .flip-card{
+  /* .flip-card{
     padding-left: 2px;
-  }
+  } */
 }
 
 /* Media queries for tablet and larger 768px */
-/* @media screen and (min-width:768px){
-  .flip-card{
+@media screen and (min-width:768px){
+  /* .flip-card{
     padding-left: 190px;
-  }
-} */
+  } */
+}
 
 /*large devices (laptops and desktops,992px and up)*/
-/* @media screen and (min-width:992px){
+  /* @media screen and (min-width:992px){
   .flip-card{
     padding-left: 550px;
   }
-}
+ } */
