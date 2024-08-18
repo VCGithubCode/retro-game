@@ -572,13 +572,13 @@ footer {
 .centered-box h2 {
     margin-bottom: 20px;
     font-size: 32px;
-    color: #333;
+    color: #000000;
 }
 
 .centered-box p {
     margin-bottom: 30px;
     font-size: 30px;
-    color: #555;
+    color: #000000;
 }
 
 .centered-box a {
@@ -601,13 +601,11 @@ footer {
   .centered-box h2 {
     margin-bottom: 20px;
     font-size: 28px;
-    color: #333;
   }
 
   .centered-box p {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #555;
   }
 
   #homepage-link {
@@ -621,13 +619,11 @@ footer {
   .centered-box h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    color: #333;
   }
 
   .centered-box p {
     margin-bottom: 15px;
     font-size: 20px;
-    color: #555;
   }
 
   #homepage-link {
