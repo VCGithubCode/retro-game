@@ -169,6 +169,10 @@ h1 {
   margin-inline: auto;
 }
 
+.game-buttons {
+  width: 80%;
+}
+
 #start {
   position: absolute;
   left: 50%;
