@@ -666,6 +666,10 @@ footer {
   font-weight: 700;
   font-family: "Press Start 2P", cursive;
 }
+
+#submit-button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
     
   /* Media queries for devices larger than 320px */
 @media screen and (min-width:320px){
