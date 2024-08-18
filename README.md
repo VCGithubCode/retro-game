@@ -64,9 +64,6 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 |   | Landing Page | Game Page | Contact Page |
 | --- | --- | --- | --- |
 | Desktop | ![Landing Page Screenshot](/docs/wireframes/landing-page.png) | ![Game Page Screenshot](/docs/wireframes/game-page.png) | ![Contact Page Screenshot](/docs/wireframes/contact-page.png)|
-| Tablet | TBC | TBC | TBC |
-| Mobile | TBC | TBC | TBC |
-
 
 [Back to top](#marios-reboot)
 
@@ -84,6 +81,10 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
   - The contact page is for users to submit messages about anything to do with the Mario's Reboot game to the developers.
 
+- **Thank You Page**
+
+- The thank you page is to say thank you to users for getting in touch.
+
 - **Navbar**
 
   - Navbar is present so that the user can navigate around the site.
@@ -91,6 +92,24 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 - **Footer**
 
 - **Error Page**
+
+We have included error handling for error 404 pages:
+
+![Error Page Screenshot](/docs/readme_screenshots/error-page.png)
+
+- **Images**
+
+We have included the following images in the project:
+
+| Image | Screenshot |
+| --- | --- |
+| About Title | ![About Page Title Screenshot](/assets/images/about-title.webp) |
+| Title | ![Project Title Screenshot](/assets/images/title.webp) |
+| Contact Link | ![Contact Link Screenshot](/assets/images/contact.webp) |
+| Developers Link | ![Developers Link Screenshot](/assets/images/developers.webp) |
+| Homepage Link | ![Homepage Link Screenshot](/assets/images/homepage.webp) |
+| Start Link | ![Start Link Screenshot](/assets/images/start.webp)
+| Bricks | ![Bricks Image Screenshot](/assets/images/bricks.webp) |
 
 [Back to top](#marios-reboot)
 
@@ -256,7 +275,8 @@ By forking the GitHub Repository, we make a copy of the original repository on o
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Favicon](https://www.favicon.cc/?action=icon&file_id=898422) | Favicon | Created by ineedicons |
-| [Mario Retro Font](https://www.mariowiki.com/List_of_fonts#Classic_Super_Mario_font) | Fonts | Created by mariowiki | 
+| [Mario Retro Font](https://www.mariowiki.com/List_of_fonts#Classic_Super_Mario_font) | Fonts | Created by mariowiki |
+| canva | Images | canva |
 
 ### Acknowledgements
 
