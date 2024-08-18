@@ -65,10 +65,25 @@ async function main(canvas) {
 }
 
 const canvas = document.getElementById('screen');
+const startButton = document.createElement('button');
+startButton.textContent = 'Start Game';
+startButton.style.cssText = `
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  display: grid;
+  margin-inline: auto;
+  top: 35%;
+  background: #000000c7;
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid white;
+`;
+document.body.appendChild(startButton);
 
-const start = () => {
-    window.removeEventListener('click', start);
-    main(canvas);
-};
-
-window.addEventListener('click', start);
+startButton.addEventListener('click', () => {
+  startButton.remove();
+  // Call your main function here
+  main(canvas);
+});
