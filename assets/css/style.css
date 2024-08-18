@@ -496,7 +496,20 @@ footer {
   /* .flip-card{
     padding-left: 2px;
   } 
-}*/
+    
+  /* Media queries for devices larger than 320px */
+@media screen and (min-width:320px){
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-bottom: 5px;
+  font-size: 8.3px;
+  height: 145px;
+}
+
+}
 
 /* Media queries for tablet and larger 768px */
 @media screen and (min-width:768px){
