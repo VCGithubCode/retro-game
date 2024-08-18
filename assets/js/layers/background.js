@@ -32,13 +32,8 @@ export function createBackgroundLayer(level, tiles, sprites) {
         const drawTo = drawFrom + drawWidth;
         redraw(drawFrom, drawTo);
 
-        const scaleX = context.canvas.width / buffer.width;  // Scale for responsive width
-        const scaleY = context.canvas.height / buffer.height;  // Scale for responsive height
-
         context.drawImage(buffer,
-            -camera.pos.x % 16 * scaleX, // Adjusted for scale
-            -camera.pos.y * scaleY, // Adjusted for scale
-            buffer.width * scaleX, // Scale width
-            buffer.height * scaleY); // Scale height
+            -camera.pos.x % 16,
+            -camera.pos.y);
     };
 }
