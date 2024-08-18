@@ -2,13 +2,173 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Super Mario</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/favicon/favicon.ico" rel="icon" type="image/x-icon">
+  <title>Contact - Super Mario</title>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
-<h1>Contact Us</h1>
+  <!-- Header -->
+   <header id="landing-header">
+    <h1 class="header-home">&#8203;</h1>
+    <div class="image-container">
+      <img id="title" src="assets/images/title.webp" alt="an image of mario reboot text">
+    </div>
+    <div class="nav-menu">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        &#8203;<span></span>
+      </label>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            <img src="assets/images/developers.webp" alt="Meet the developers" class="nav-image">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">
+            <img src="assets/images/contact.webp" alt="contact us" class="nav-image">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- Scene -->
+  <div class="scene-contact">
+    <!-- Clouds going across screen -->
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="cloud cloud4"></div>
+    <!-- Contact Form section -->
+    <div class="contact-box-container">
+      <div class="contact-centered-box">
+        <h2>Contact Us</h2>
+        <p>
+          We would love to hear from you, whether it's to do with improvements to the game 
+          or if you would like to join the Super Mario Minions!
+        </p>
+        <p>Please fill out the form below.</p>
+        <!-- Form section -->
+        <div id="form-container">
+        <form id="contactForm" name="contactForm" onsubmit="return sendMail(this);">
+          <div>
+            <label for="name" class="form-label">Your name</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+            <div id="nameHelp" class="form-text">Please provide your preferred name.</div><br>
+          </div>
+
+          <div>
+            <label for="email" class="form-label">Your email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+            <div class="form-text">We'll never share your email with anyone else.</div><br>
+          </div>
+
+          <div>
+            <label for="enquiry" class="form-label">Your query</label>
+            <textarea rows="10" name="enquiry" id="enquiry" class="form-control" required></textarea>
+          </div>
+
+          <div id="checkbox-div">
+            <input type="checkbox" required>
+            <label class="form-check-label" for="exampleCheck1">I have read and agreed to the <a
+              href="https://www.termsfeed.com/live/fabff9bf-356e-4897-943b-4322ed3624ed" id="privacy-link">privacy
+              policy</a></label>
+          </div>
+
+          <div>
+            <Button
+              id="submit-button"
+              type="submit" 
+              value="Submit Message"
+              aria-label="clicking submit will redirect to another page"
+            >
+              Submit Message
+            </Button>
+          </div>
+      </form>
+    </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+   <footer>
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar"
+            >
+          </div>
+          <div class="flip-card-back">
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook footer-icon">&#8203;</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar"
+            >
+          </div>
+          <div class="flip-card-back">
+            <a href="https://www.linkedin.com">
+              <i class="fa-brands fa-linkedin footer-icon">&#8203;</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar"
+            >
+          </div>
+          <div class="flip-card-back">
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram footer-icon">&#8203;</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class="flip-image"
+              src="https://imgs.search.brave.com/oyWbSGOo0vuKFuUdxhQd2fERbj8yZDRzjw0V-NSaDTA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltZzEvMTM0/NjMyOS5qcGc"
+              alt="Avatar"
+            >
+          </div>
+          <div class="flip-card-back">
+            <a href="https://www.github.com">
+              <i class="fa-brands fa-github footer-icon">&#8203;</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+   <script src="assets/js/email.js"></script>
 </body>
 
 </html>
