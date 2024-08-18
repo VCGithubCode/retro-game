@@ -552,6 +552,120 @@ footer {
   height: 70px;
   width: 190px;
 }
+
+/* Contact page */
+
+.scene-contact {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: #049cd8;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-box-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Box styling */
+.contact-centered-box {
+    font-family: "Press Start 2P", cursive;
+    text-align: center;
+    background-color: #ffffff9d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 90%;
+    left: 5%;
+    opacity: 0;  /* Initially hidden */
+    transform: scale(0);  /* Start from a small scale */
+    transition: transform 3s ease-out, opacity 3s ease-out;
+    animation: expand-box 3s ease-out forwards;
+}
+
+/* Keyframes to handle the expansion */
+@keyframes expand-box {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.contact-centered-box h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #000000;
+}
+
+.contact-centered-box p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Contact Form */
+
+#form-container {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.form-label {
+  color: #E52521;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.form-text {
+  font-size: 14px;
+  color: #049cd8;
+}
+
+.form-check-label {
+  font-size: 14px;
+  color: #049cd8;
+}
+
+#checkbox-div {
+  margin-top: 5px;
+}
+
+#privacy-link {
+  color: #E52521;
+}
+
+#submit-button {
+  height: 50px;
+  width: 170px;
+  background-color: #049cd8;
+  color: #E52521;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Press Start 2P", cursive;
+}
     
   /* Media queries for devices larger than 320px */
 @media screen and (min-width:320px){
@@ -600,6 +714,33 @@ footer {
   height: 90px;
   width: 300px;
   }
+}
+
+/* Media queries for labtops/desktops and larger 992px */
+@media screen and (min-width:992px){
+  /* contact page */
+  .contact-centered-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+  .contact-centered-box p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #000000;
+}
+
+  .form-label {
+    font-size: 18px;
+}
+
+  #submit-button {
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+}
+  
 }
 
 /*large devices (laptops and desktops,992px and up)*/
