@@ -111,5 +111,5 @@ HOME_BTN.addEventListener('click', goHome);
 
 function goHome() {
   // code to go home here
-  window.location.href = "/index.html";
+  window.location.href = "./index.html";
 }
