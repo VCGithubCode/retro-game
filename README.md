@@ -166,20 +166,27 @@ We have included the following images in the project:
 
 We have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate our HTML files.
 
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Landing Page | To follow | To follow | To follow |
-| Game Page | To follow | To follow | To follow |
-| Contact Page | To follow | To follow | To follow |
+| Page | W3C URL | Screenshot |
+| --- | --- | --- |
+| Landing Page | [url](https://validator.w3.org/nu/#textarea) | ![Index.html W3C](/docs/readme_screenshots/index.html.png) |
+| Game Page | [url](https://validator.w3.org/nu/#textarea) | ![game.html](/docs/readme_screenshots/game.html.png) |
+| Contact Page | [url](https://validator.w3.org/nu/#textarea) | ![contact.html](/docs/readme_screenshots/contact.html.png) |
+| About Page | [url](https://validator.w3.org/nu/#textarea) | ![about.html](/docs/readme_screenshots/about.html.png) |
+| Thank You Page | [url](https://validator.w3.org/nu/#textarea) | ![thank-you.html](/docs/readme_screenshots/thank-you.html.png) |
+| Error Page | [url](https://validator.w3.org/nu/#textarea) | ![404.html](/docs/readme_screenshots/404.html.png) |
 
 
 #### CSS
 
 We have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate our CSS files.
 
-| File | Jigsaw URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| style.css | to follow | to follow | to follow |
+| File | Jigsaw URL | Screenshot |
+| --- | --- | --- |
+| about.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![about.css](/docs/readme_screenshots/about.css.png) |
+| game.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![game.css](/docs/readme_screenshots/game.css.png) |
+| memory.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![memory.css](/docs/readme_screenshots/memory.css.png) |
+| reset.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![reset.css](/docs/readme_screenshots/reset.css.png) |
+| style.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![style.css](/docs/readme_screenshots/style.css.png) |
 
 #### JAVASCRIPT
 
@@ -319,8 +326,9 @@ A big thank you to all fellow team members for their great work:
 | Amy | Presentation, Frontent | [Github](https://github.com/NorfolkTate) |
 | Fernando | Game Development, Design | [GitHub](https://github.com/Goncalves95) |
 | Meghana | Wireframes, Frontend | [Github](https://github.com/Meghanarajvinakota) |
-| Riman | Epics, Agile | [Github]() |
 | Sam | Documentation, Frontend | [Github](https://github.com/sam2829) |
-| Vernell | Scrum Lead, Deployment, Project Setup | [Github](https://github.com/sam2829) |
+| Vernell | Scrum Lead, Deployment, Project Setup, Epics, Agile | [Github](https://github.com/sam2829) |
+
+We also used our slack channel canvas to great effeciency for meetings, notes and tables so people were aware of their tasks.
 
 [Back to top](#marios-reboot)
