@@ -557,12 +557,18 @@ footer {
 
 /* Contact page */
 
+body.contact-page {
+  height: auto;
+  min-height: 100%;
+  overflow-y: auto;
+}
+
 .scene-contact {
   width: 100dvw;
-  height: 100dvh;
+  min-height: 1100px;
   background-color: #049cd8;
   position: relative;
-  overflow: hidden;
+  height: auto;
 }
 
 .contact-box-container {
@@ -658,8 +664,8 @@ footer {
 }
 
 #submit-button {
-  height: 50px;
-  width: 170px;
+  height: 40px;
+  width: 150px;
   background-color: #049cd8;
   color: #E52521;
   border-radius: 10px;
