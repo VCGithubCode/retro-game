@@ -94,11 +94,3 @@ startButton.addEventListener('click', () => {
     startButton.remove();
     main(canvas);
 });
-
-let audio = new Audio('audio/overworld.mp3');
-
-// Set the loop attribute to true
-audio.loop = true;
-
-// Play the audio when the game starts
-audio.play();
