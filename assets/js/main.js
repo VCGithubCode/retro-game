@@ -84,6 +84,5 @@ document.body.appendChild(startButton);
 
 startButton.addEventListener('click', () => {
   startButton.remove();
-  // Call your main function here
   main(canvas);
 });
