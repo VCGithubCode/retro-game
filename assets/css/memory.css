@@ -11,8 +11,8 @@ body {
 
 body, html {
   overflow: auto !important;
+  background-color: #049cd8;
 }
-
 button {
   font-family: "Reddit Mono";
 }
