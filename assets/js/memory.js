@@ -63,7 +63,7 @@ function renderCard(fruit){
 
     const cardBack = document.createElement("div");
     cardBack.classList.add("game__card_back");
-    cardBack.innerHTML = "?";
+    cardBack.innerHTML = `<img src="img/memory_game/mariohut.png" alt="Imagem de fundo do card" style="width: 100%; height: 100%; object-fit: cover;">`;
 
     card.appendChild(cardFront);
     card.appendChild(cardBack);

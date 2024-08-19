@@ -6,8 +6,20 @@
     overflow: hidden;
 }
 
-body, html {
+body,
+html {
     overflow: auto !important;
     background-color: #049cd8;
 }
 
+#screen {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1600px;
+    max-height: 1200px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}

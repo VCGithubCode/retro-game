@@ -2,12 +2,12 @@ import Camera from './Camera.js';
 import Entity from './Entity.js';
 import PlayerController from './traits/PlayerController.js';
 import Timer from './Timer.js';
-import {createLevelLoader} from './loaders/level.js';
-import {loadFont} from './loaders/font.js';
-import {loadEntities} from './entities.js';
-import {setupKeyboard} from './input.js';
-import {createCollisionLayer} from './layers/collision.js';
-import {createDashboardLayer} from './layers/dashboard.js';
+import { createLevelLoader } from './loaders/level.js';
+import { loadFont } from './loaders/font.js';
+import { loadEntities } from './entities.js';
+import { setupKeyboard } from './input.js';
+import { createCollisionLayer } from './layers/collision.js';
+import { createDashboardLayer } from './layers/dashboard.js';
 
 function createPlayerEnv(playerEntity) {
     const playerEnv = new Entity();
@@ -26,6 +26,14 @@ async function main(canvas) {
         loadEntities(audioContext),
         loadFont(),
     ]);
+
+    let audio = new Audio('audio/overworld.mp3');
+
+    // Set the loop attribute to true
+    audio.loop = true;
+
+    // Play the audio when the game starts
+    audio.play();
 
 
     const loadLevel = await createLevelLoader(entityFactory);
@@ -51,7 +59,7 @@ async function main(canvas) {
         deltaTime: null,
     };
 
-    const timer = new Timer(1/60);
+    const timer = new Timer(1 / 60);
     timer.update = function update(deltaTime) {
         gameContext.deltaTime = deltaTime;
         level.update(gameContext);
@@ -83,6 +91,14 @@ startButton.style.cssText = `
 document.body.appendChild(startButton);
 
 startButton.addEventListener('click', () => {
-  startButton.remove();
-  main(canvas);
+    startButton.remove();
+    main(canvas);
 });
+
+let audio = new Audio('audio/overworld.mp3');
+
+// Set the loop attribute to true
+audio.loop = true;
+
+// Play the audio when the game starts
+audio.play();

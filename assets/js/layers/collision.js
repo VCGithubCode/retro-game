@@ -41,12 +41,7 @@ function createTileCandidateLayer(tileCollider) {
 }
 
 export function createCollisionLayer(level) {
-
-    const drawTileCandidates = createTileCandidateLayer(level.tileCollider);
-    const drawBoundingBoxes = createEntityLayer(level.entities);
-
     return function drawCollision(context, camera) {
-        drawTileCandidates(context, camera);
-        drawBoundingBoxes(context, camera);
+        // No-op, as we're not drawing anything
     };
 }
