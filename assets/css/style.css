@@ -46,7 +46,7 @@ body, html {
 }
 
 #title {
-  max-width: 100%;
+  width: clamp(10rem,50%, 600px);
 }
 
 .nav-menu {
@@ -725,6 +725,10 @@ body.contact-page {
   /* thank you page */
   .centered-box h2 {
     font-size: 32px;
+  }
+
+  .nav-image {
+    width: 50%;
   }
 
   #homepage-link {
