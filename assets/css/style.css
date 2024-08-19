@@ -727,6 +727,10 @@ body.contact-page {
     font-size: 32px;
   }
 
+  .nav-image {
+    width: 50%;
+  }
+
   #homepage-link {
   height: 90px;
   width: 300px;
