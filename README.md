@@ -61,9 +61,15 @@ This was borrowed from the original super mario retro theme.
 To follow best practices, wireframes were developed to help with development.
 We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wireframes.
 
-|   | Landing Page | Game Page | Contact Page |
-| --- | --- | --- | --- |
-| Desktop | ![Landing Page Screenshot](/docs/wireframes/landing-page.png) | ![Game Page Screenshot](/docs/wireframes/game-page.png) | ![Contact Page Screenshot](/docs/wireframes/contact-page.png)|
+**Desktop:**
+
+| Landing Page | Game Page | Memory Game Page |
+| --- | --- | --- |
+| ![Landing Page Screenshot](/docs/wireframes/home-page.png) | ![Game Page Screenshot](/docs/wireframes/mario-game-page.png) | ![Memory Game Page Screenshot](/docs/wireframes/memory-game-page.png)|
+
+| Contact Page | About Page |
+| --- | --- |
+| ![Contact Page Screenshot](/docs/wireframes/contact-mockup-page.png) | ![About Page Screenshot](/docs/wireframes/meet-the-developers-page.png)
 
 [Back to top](#marios-reboot)
 
