@@ -166,9 +166,11 @@ h1 {
 #game-choices {
   display: flex;
   flex-direction: column;
+
   position: absolute;
   top: 50%;
   margin-inline: auto;
+
 }
 
 .game-buttons {
