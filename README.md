@@ -73,23 +73,49 @@ We've used [Balsamiq](https://balsamiq.com/wireframes) to design our site wirefr
 
   - This page clearly welcomes you to the website. You will also realise what is the purpose for this site.
 
-- **Game Page**
+  ![Landing Page Screenshot](/docs/readme_screenshots/homepage.png)
+
+- **Mario Game Page**
 
   - This page takes the form of the game. Here the user has the chance to play the mario game.
+
+  ![Mario Game Page Screenshot](/docs/readme_screenshots/game-page.png)
+
+- **Memory Game Page**
+
+  - This page takes the form of the memory game. Here the user has the chance to play the memory game.
+
+  ![Mario Memory Game Screenshot](/docs/readme_screenshots/memory-game-page.png)
+
+- **About Page**
+
+  - This page gives the users the chance to see who the Mario Minions are.
+
+  ![About Us Page Screenshot](docs/readme_screenshots/about-page.png)
 
 - **Contact Page**
 
   - The contact page is for users to submit messages about anything to do with the Mario's Reboot game to the developers.
 
+  ![Contact Page Screenshot](/docs/readme_screenshots/contact-page.png)
+
 - **Thank You Page**
 
   - The thank you page is to say thank you to users for getting in touch.
+
+  ![Thank You Page Screenshot](/docs/readme_screenshots/thank-you-page.png)
 
 - **Navbar**
 
   - Navbar is present so that the user can navigate around the site.
 
+  ![Navbar Screenshot](/docs/readme_screenshots/navbar.png)
+
 - **Footer**
+
+  - Footer is present at the bottom of the page and has links to external pages.
+
+  ![Footer Screenshot](/docs/readme_screenshots/footer.png)
 
 - **Error Page**
 
