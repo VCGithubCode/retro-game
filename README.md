@@ -173,16 +173,20 @@ We have used the recommended [HTML W3C Validator](https://validator.w3.org) to v
 | Contact Page | [url](https://validator.w3.org/nu/#textarea) | ![contact.html](/docs/readme_screenshots/contact.html.png) |
 | About Page | [url](https://validator.w3.org/nu/#textarea) | ![about.html](/docs/readme_screenshots/about.html.png) |
 | Thank You Page | [url](https://validator.w3.org/nu/#textarea) | ![thank-you.html](/docs/readme_screenshots/thank-you.html.png) |
-| Error Page | [url](https://validator.w3.org/nu/#textarea) | ![game.html](/docs/readme_screenshots/g.html.png) |
+| Error Page | [url](https://validator.w3.org/nu/#textarea) | ![404.html](/docs/readme_screenshots/404.html.png) |
 
 
 #### CSS
 
 We have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate our CSS files.
 
-| File | Jigsaw URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| style.css | to follow | to follow | to follow |
+| File | Jigsaw URL | Screenshot |
+| --- | --- | --- |
+| about.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![about.css](/docs/readme_screenshots/about.css.png) |
+| game.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![game.css](/docs/readme_screenshots/game.css.png) |
+| memory.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![memory.css](/docs/readme_screenshots/memory.css.png) |
+| reset.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![reset.css](/docs/readme_screenshots/reset.css.png) |
+| style.css | [url](https://jigsaw.w3.org/css-validator/#validate_by_input) | ![style.css](/docs/readme_screenshots/style.css.png) |
 
 #### JAVASCRIPT
 
