@@ -37,7 +37,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #000000;
+  background: #049cd8;
   width: 100%;
   padding: 10px;
 }
@@ -78,7 +78,7 @@ label.menu-icon {
   width: 100%;
   height: 3px;
   background-color: #ffffff;
-  color: #000;
+  color: #049cd8;
   transition: transform 0.3s ease, top 0.3s ease, bottom 0.3s ease;
 }
 
@@ -163,31 +163,56 @@ h1 {
   margin: auto;
 }
 
-#game-choices {
+#start-button {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 50%;
-  margin-inline: auto;
+  gap: 60px;
+  margin-top: 20%;
+  width: 100%;
 }
 
+#game-choices {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: space-around;
+}
+
+
 .game-buttons {
+  display: block;
   width: 80%;
 }
 
-#start {
-  position: absolute;
+#start2 img {
+  width: 100%;
+}
+
+#start, #start2 {
+  position: relative;
+  left: auto;
+  transform: none;
+  z-index: 5;
+  display: block;
+  background: #000000c7;
+  border-radius: 16px;
+  padding: 16px;
+  border: 2px solid white;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  /**position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 5;
   display: grid;
   margin-inline: auto;
   top: 35%;
   background: #000000c7;
   border-radius: 16px;
   padding: 16px;
-  border: 2px solid white;
+  border: 2px solid white;**/
 }
+
 
 #start:hover, #start:focus,
 #start2:hover, #start2:focus {
@@ -195,7 +220,11 @@ box-shadow: 0 0 20px 10px #ffffff;
 }
 
 #start2 {
-    position: absolute;
+  background: #ffffff9d;
+  border: 2px solid #fff;
+  display: flex;
+  margin-inline: auto;
+    /**position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5;
@@ -205,16 +234,25 @@ box-shadow: 0 0 20px 10px #ffffff;
     background: #ffffff9d;
     border-radius: 16px;
     padding: 16px;
-    border: 2px solid #fff;
+    border: 2px solid #fff;**/
 }
 
-#start img {
+#start img, #start2 img {
   width: 100%;
 }
 
-#start2 img {
-  width: 100%;
+.mushroom-image {
+  max-width: 100px;
+  height: auto;
+  padding-right:40px;
 }
+
+.star-image {
+  max-width: 100px;
+  height: auto;
+  padding-left: 40px
+}
+
 
 .mario {
   background-image: url(http://vignette3.wikia.nocookie.net/fantendo/images/0/05/Mystery_Mushroom_Mario.png/revision/latest?cb=20150913142904);
